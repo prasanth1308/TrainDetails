@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         fromStation = (EditText) findViewById(R.id.searchTrainFrom);
         toStation = (EditText) findViewById(R.id.searchTrainTo);
-        Toast.makeText(MainActivity.this, "Welcome", Toast.LENGTH_LONG).show();
+        Toast.makeText(MainActivity.this, "Hi there...", Toast.LENGTH_LONG).show();
     }
 
     /** Called when the user taps the search button */
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
             conn.setDoInput(true);
             conn.connect();
             int response = conn.getResponseCode();
-            Log.d("SSSSSSSSSSSSS", "The response is: " + response);
+            Log.d("Resp Code", "The response is: " + response);
             is = conn.getInputStream();
 
             // Convert the InputStream into a string
